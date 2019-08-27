@@ -7,20 +7,16 @@ import * as pokeList from './consts/Utils'
 import { MuiThemeProvider, Grid } from '@material-ui/core';
 import theme from './theme'
 
-// return a new post instance
+
 const generatePost = () => {
-  // pick a random pokemon
-  let poke:number = pokeList.getRandomInt(1, 809);
-  // pull down its image from pokemon.com
-  let url:string = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/";
+  let poke:number = pokeList.getRandomInt(1, 809);                              // pick a random pokemon
+  let url:string = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/";  // pull down its image from pokemon.com
   let str = url.concat(poke.toString().padStart(3, '0'), ".png");
-  //pick a background color for the image
-  let color:string = pokeList.hsvToRGB(Math.random(), 0.15, 0.9);
-  // go from the pokemon number to its name
-  let msg:string = "A wild "+pokeList.getPokemon(poke)+" appeared!";
-  // list elements need a unique ID
-  let key:number = pokeList.getRandomInt(0, 999999);
-  // the rest of the info is boilerplate
+  let color:string = pokeList.hsvToRGB(Math.random(), 0.15, 0.9);               // pick a background color for the image
+  let msg:string = "A wild "+pokeList.getPokemon(poke)+" appeared!";            // go from the pokemon number to its name
+  let key:number = pokeList.getRandomInt(0, 999999);                            // list elements need a unique ID
+  
+  // the rest of the info is boilerplate, for now anyway
   let post = {"key":key, "src":"https://i.imgur.com/vjLcuFJ.jpg", "username":"The Very Best", "at":"AshKetchum", "message":msg ,"imgLink":str, "color":color};
   return post;
 }
