@@ -7,6 +7,10 @@ import * as pokeList from './consts/Utils'
 import { MuiThemeProvider, Grid } from '@material-ui/core';
 import theme from './theme'
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3c10a50409f265f01935f7d1344841db069e0ef0
 const generatePost = () => {
   let poke:number = pokeList.getRandomInt(1, 809);                              // pick a random pokemon
   let url:string = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/";  // pull down its image from pokemon.com
@@ -56,4 +60,9 @@ const App: FunctionComponent = () => {
       </MuiThemeProvider>
     )
 }
+<<<<<<< HEAD
 export default App;
+=======
+
+export default App;
+>>>>>>> 3c10a50409f265f01935f7d1344841db069e0ef0
