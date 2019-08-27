@@ -1,0 +1,76 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background: #ffffff;
+  width: 100%;
+  height: 20%;
+  text-align:center;
+  position: relative;
+}
+.card:hover, .imgContainer:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.msg {
+  text-align: left;
+  font-size: 12pt;
+  margin-left:14%;
+  margin-right: 5%;
+}
+
+.img {
+  max-height: 30%;
+  max-width: 30%;
+  margin: 2%;
+}
+.imgContainer {
+  margin-left:14%;
+  margin-right:5%;
+  max-height: 160%;
+  position:relative;
+}
+
+.profImg {
+  width: 70px !important;
+  height:70px !important;
+  margin-top: 4%;
+  margin-left: 4%;
+}
+
+.headContainer {
+  margin-left: 6%;
+  text-align:left;
+  line-height:35px;
+}
+
+.grayHead {
+  text-align:left;
+  color:gray;
+  display: inline;
+}
+
+.grayHead:hover, .userHead:hover {
+  text-decoration: underline;
+}
+
+.userHead {
+  text-align:left;
+  display: inline;
+  text-decoration: none;
+  color:black;
+}
+
+.top, .addBtn {
+  width: 800px !important;
+  background: lightblue !important;
+  transition: all 0s;
+}
+
+.line {
+  left:30px;
+  height: 450px;
+  width: 2px;
+  background-color: lightblue;
+  opacity: 0.3;
+  position:absolute;
+}
