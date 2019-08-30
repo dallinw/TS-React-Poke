@@ -7,7 +7,7 @@ import * as pokeList from './consts/Utils'
 import { MuiThemeProvider, Grid } from '@material-ui/core';
 import theme from './theme'
 const generatePost = () => {
-  let poke:number = pokeList.getRandomInt(1, 809);                              // pick a random pokemon
+  let poke:number = pokeList.getRandomInt(1, 151);                              // pick a random pokemon from original 151
   let url:string = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/";  // pull down its image from pokemon.com
   let str = url.concat(poke.toString().padStart(3, '0'), ".png");
   let color:string = pokeList.hsvToRGB(Math.random(), 0.15, 0.9);               // pick a background color for the image
@@ -15,7 +15,7 @@ const generatePost = () => {
   let key:number = pokeList.getRandomInt(0, 999999);                            // list elements need a unique ID
   
   // the rest of the info is boilerplate, for now anyway
-  let post = {"key":key, "src":"https://i.imgur.com/vjLcuFJ.jpg", "username":"The Very Best", "at":"AshKetchum", "message":msg ,"imgLink":str, "color":color};
+  let post = {"key":key, "src":"https://i.imgur.com/vjLcuFJ.jpg", "username":"Pokemon Trainer", "at":"AshKetchum", "message":msg ,"imgLink":str, "color":color};
   return post;
 }
 const App: FunctionComponent = () => {
